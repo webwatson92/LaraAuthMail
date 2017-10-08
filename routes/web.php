@@ -22,7 +22,7 @@ Route::get('/test-contact', function () {
       ]);
 });
 Route::get('contact', 'ContactController@create');
-Route::post('contact', 'ContactController@store');
+Route::post('contact', 'ContactController@store')->name('contact');
 
 Auth::routes();
 

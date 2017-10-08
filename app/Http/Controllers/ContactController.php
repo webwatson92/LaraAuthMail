@@ -10,11 +10,13 @@ class ContactController extends Controller
 {
     public function create()
     {
-        return view('tmpl.contact');
+        return view('front.contact');
     }
  
     public function store(ContactRequest $request)
     {
-        return view('tmpl.confirm');
+    	Mail::to('administrateur@chezmoi.com')
+            ->send(new Contact($request->except('_token')));
+        return view('emails.contact');
     }
 }

@@ -8,8 +8,8 @@
                 <form action="{{ url('contact') }}" method="POST">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <input type="text" class="form-control {{ $errors->has('nom') ? 'is-invalid' : '' }}" name="nom" id="nom" placeholder="Votre nom" value="{{ old('nom') }}">
-                        {!! $errors->first('nom', '<div class="invalid-feedback">:message</div>') !!}
+                        <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" name="name" id="name" placeholder="Votre name" value="{{ old('name') }}">
+                        {!! $errors->first('name', '<div class="invalid-feedback">:message</div>') !!}
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" id="email" placeholder="Votre email" value="{{ old('email') }}">
