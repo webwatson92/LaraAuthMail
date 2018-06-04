@@ -18,7 +18,7 @@ Implementation
     MAIL_DRIVER = SMTP
     MAIL_HOST = localhost
     MAIL_PORT = 1025
-    MAIL_USERNAME = null
+    MAIL_USERNAME = null	
     MAIL_PASSWORD = null
     MAIL_ENCRYPTION = null
     
