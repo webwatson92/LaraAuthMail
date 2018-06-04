@@ -10,11 +10,11 @@ Facilitating service allowing you to get a head start on a complex project
 
 Implementation
 
-1- Clone the project
-2 - Create a database conforming to the name of the project
-3 - Install Maildev via 
+- Clone the projec
+- Create a database conforming to the name of the project
+- Install Maildev via 
     npm install maildev
-4 - Configure the .env file for sending mail
+- Configure the .env file for sending mail
     MAIL_DRIVER = SMTP
     MAIL_HOST = localhost
     MAIL_PORT = 1025
@@ -22,10 +22,10 @@ Implementation
     MAIL_PASSWORD = null
     MAIL_ENCRYPTION = null
     
-5 - Generate migration: 
+- Generate migration: 
     php artisan migrate
-6 - launch the mail server in CMD: 
+- launch the mail server in CMD: 
     maildev
-7 - Open maildev in the browser with: 
+- Open maildev in the browser with: 
       localhost: 1080
-8 - Create a new user.
+- Create a new user.
